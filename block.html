@@ -1,0 +1,23 @@
+   <!DOCTYPE html>
+    <html lang="KO">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> block </title>
+        <style>
+            p {width: 300px; text-align: center;}
+            /* width를 100px를 맞췄을때 공간이 없어서 "이미지1"이라는 글자가 아래로 내려온 것 */
+            span {display: block;}
+            /* = span(인라인요소)를 블록요소로 변경하라*/
+            a {color: gray; text-decoration: none;}
+
+        </style>
+    </head>
+    <body>
+      <p><a href="#">
+        <img src="image/verticalalign01.jpg" alt="이미지">
+        <span>이미지1</span><span class="abc">내용</span> </a>
+</p>
+    </body>
+    </html>
