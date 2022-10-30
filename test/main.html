@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩테스트</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div id="skip_menu" class="skip">
+        <a href="#header">메뉴바로가기</a>
+    </div>
+
+    <header id="header">
+
+        <!-- 헤더 상단 -->
+        <article class="header_first">
+            <h1><a href="#"><img src="img/gnb/logo.png" alt="홈페이지 바로가기"></a></h1>
+
+            <button class="hamburger moimg">
+                <img src="img/gnb/hambuger.png" alt="메뉴 보기">
+            </button>
+
+        </article>
+
+        <!-- gnb -->
+        <article class="gnb_container">
+            <div id="gnb_wrap">
+                <div id="modal_back" class="moimg"></div>
+                <ul class="sideMenu" id="pc">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+
+                    <li class="english">
+                        <a href="#">English</a>
+                    </li>
+                </ul>
+                <p class="close" style="z-index: 9999;"><img class="moimg" src="img/gnb/close.png" alt="메뉴닫기"></p>
+
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">학회소개</a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">인사말</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">연혁</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">회칙</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">임원진 및 위원회</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">사무국 안내</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">학회지</a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">학회지</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">행사일정</a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">경기학술대회</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">My Unforgettable Ultrasound 수상작</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">정기연수교육</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">정기 Hands-on 교육</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">이사회 및 중요행사</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">국제학회 일정</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">회원공간</a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">뉴스레터</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">게시판</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">자료실</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">중례토론</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">YODs</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#">관련사이트</a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">관련사이트</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#">교육자료</a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">일반인을 위한 초음파</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">연수교육 자료</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">KAFE 자료</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </article>
+
+
+    </header>
+
+    <!-- header 끝 -->
+
+    <!-- maincontent 시작 -->
+    <section id="contentWrap">
+        <div id="maincontent">
+            <!-- main1 시작 -->
+            <article id="main1">
+                <!--  main1  배너 -->
+                <div id="main1_intro">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img class="moimg" src="img/main1/main1_banner.jpg"
+                                    alt="초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다.">
+                                <img class="pcimg" src="img/main1/main1_banner_pc.jpg"
+                                    alt="초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다.">
+
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img class="moimg" src="img/main1/main1_banner.jpg"
+                                    alt="초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다.">
+                                <img class="pcimg" src="img/main1/main1_banner_pc.jpg"
+                                    alt="초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다.">
+
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img class="moimg" src="img/main1/main1_banner.jpg"
+                                    alt="초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다.">
+                                <img class="pcimg" src="img/main1/main1_banner_pc.jpg"
+                                    alt="초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다.">
+
+                            </a>
+
+                        </li>
+                    </ul>
+
+                    <div id="main1_intro_pager">
+                        <a data-slide-index="0" href="#"><span></span></a>
+                        <a data-slide-index="1" href="#"><span></span></a>
+                        <a data-slide-index="2" href="#"><span></span></a>
+
+                    </div>
+                </div>
+
+                <!-- main1 공지사항 -->
+                <div id="main1_notice">
+                    <div class="main1_notice_title">
+                        <h3>공지사항</h3>
+                        <p class="morebtn"><a href="#">더보기</a></p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                                대한초음파의학회 13차 인증의 신규접수 합니다.
+                            </a>
+                            <span>2018-08-29</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                KSUM International Fellow Tutor 교수님 모집
+                            </a>
+                            <span>2018-07-06</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                "상복부 초음파 보험적용 범위 전면확대" 요약
+                            </a>
+                            <span>2018-03-30</span>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                인증의 갱신사이트 Open 안내
+                            </a>
+                            <span>2017-05-16</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </article>
+
+            <!-- main1 끝 -->
+            
+            <!-- main2 시작 -->
+
+            <article id="main2">
+
+                <!-- main2 배너 -->
+                <div id="main2_event">
+                    <ul>
+                        <li>
+                            <a href=""> <img class="moimg" src="img/main2/event_banner.jpg"
+                                    alt="대한초음파의학교육원 복부초음파 검사 입문 교육: 강의 및 실습 / 일시: 2018년 12월 9일(일) / 장소: 캐논케이타이 2층 대회의실(도시바 교육장)">
+
+                                <img class="pcimg" src="img/main2/event_banner_pc.jpg"
+                                    alt="대한초음파의학교육원 복부초음파 검사 입문 교육: 강의 및 실습 / 일시: 2018년 12월 9일(일) / 장소: 캐논케이타이 2층 대회의실(도시바 교육장)">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img class="moimg" src="img/main2/event_banner2.jpg"
+                                    alt="대한초음파의학교육원 복부초음파 검사 입문 교육: 강의 및 실습 / 일시: 2018년 12월 9일(일) / 장소: 캐논케이타이 2층 대회의실(도시바 교육장)">
+                            <img class="pcimg" src="img/main2/event_banner2_pc.jpg"
+                                alt="대한초음파의학교육원 복부초음파 검사 입문 교육: 강의 및 실습 / 일시: 2018년 12월 9일(일) / 장소: 캐논케이타이 2층 대회의실(도시바 교육장)"></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img class="moimg" src="img/main2/event_banner3.jpg"
+                                    alt="대한초음파의학교육원 복부초음파 검사 입문 교육: 강의 및 실습 / 일시: 2018년 12월 9일(일) / 장소: 캐논케이타이 2층 대회의실(도시바 교육장)">
+                            <img class="pcimg" src="img/main2/event_banner3_pc.jpg"
+                                alt="대한초음파의학교육원 복부초음파 검사 입문 교육: 강의 및 실습 / 일시: 2018년 12월 9일(일) / 장소: 캐논케이타이 2층 대회의실(도시바 교육장)"></a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <a id="event_prev" href="#">이전페이지</a>
+                        <a id="event_next" href="#">다음페이지</a>
+                    </div>
+
+                </div>
+
+                <!-- main2 칼럼 -->
+                <div id="main2_column">
+                    <div id="main2_column_left">
+                        <div class="column_title">
+                            <h3>증례토론</h3>
+                            <p class="morebtn"><a href="#">더보기</a></p>
+                        </div>
+
+                        <div class="column_body">
+                            <div class="column_body_img">
+                                <a href="#"><img class="moimg" src="img/main2/hematuria.png"
+                                        alt="F/9, hematuria 화면에 보이는 것은 다음중 어떤 aritifact 일까요? aliasing artifact / falsh arifact /mirror artifact">
+                                    <img class="pcimg" src="img/main2/hematuria_pc.png"
+                                        alt="F/9, hematuria 화면에 보이는 것은 다음중 어떤 aritifact 일까요? aliasing artifact / falsh arifact /mirror artifact">
+                                </a>
+                            </div>
+
+                            <div class="column_body_text">
+                                <a href="#">
+                                    <p>F/9세, hematuria</p>
+                                    <p>화면에 보이는 것은 다음중 어떤 aritifact 일까요? aliasing artifact / falsh arifact /mirror
+                                        artifact / motion artifact / twinkle artifact
+                                    </p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="main2_column_right">
+                        <div class="column_title">
+                            <h3>학회지</h3>
+                            <p class="morebtn"><a href="#">더보기</a></p>
+                        </div>
+
+                        <div class="column_body">
+                            <div class="column_body_img">
+                                <a href="#">
+                                    <img class="moimg" src="img/main2/ultrasonography.jpg"
+                                        alt="ultra sonography 학회지 포스터 이미지">
+                                    <img class="pcimg" src="img/main2/ultrasonography_pc.png"
+                                        alt="ultra sonography 학회지 포스터 이미지">
+                                </a>
+                            </div>
+
+                            <div class="column_body_text">
+                                <a href="#">
+                                    <span>ULTRA SONOGRAPY</span>
+
+                                    <span class="morebtn">자세히보기</span>
+                                </a>
+
+                                <a href="#">
+                                    <span>ONLINE MANSCRIPT SUNMISSION</span>
+                                    <span class="morebtn">자세히보기</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- main2 끝 -->
+
+            <!-- main3(quick_menu) 시작 -->
+
+            <article id="main3_quick_menu">
+                <ul>
+                    <li id="quick_menu01">
+                        <a href="#">
+                            <img class="moimg" src="img/quick_menu/quick_menu.jpg" alt="일반인을 위한 초음파 진료 소개 배너 클릭시 자세히보기">
+                            <img class="pcimg" src="img/quick_menu/quick_menu_pc.png" alt="일반인을 위한 초음파 진료 소개 배너 클릭시 자세히보기">
+                        </a>
+                    </li>
+
+                    <li id="quick_menu02">
+                        <a href="#">
+                            <img class="moimg" src="img/quick_menu/quick_menu2.jpg" alt="대한초음파의학회 교육 홈페이지 배너 클릭시 자세히보기">
+                            <img class="pcimg" src="img/quick_menu/quick_menu2_pc.png" alt="대한초음파의학회 교육 홈페이지 배너 클릭시 자세히보기">
+                        </a>
+                    </li>
+
+                    <li id="quick_menu03">
+                        <a href="#">
+                            <img class="moimg" src="img/quick_menu/quick_menu3.png" alt="대한초음파의학회 초음파 인증의 제도 배너 클릭시 자세히보기">
+                            <img class="pcimg" src="img/quick_menu/quick_menu3_pc.png" alt="대한초음파의학회 초음파 인증의 제도 배너 클릭시 자세히보기">
+                        </a>
+                    </li>
+
+                    <li id="quick_menu04">
+                        <a href="#">
+                            <img class="moimg" src="img/quick_menu/quick_menu4.png" alt="INTERNATIONAL MEMBERSHIP KSUM 배너 클릭시 자세히보기">
+                            <img class="pcimg" src="img/quick_menu/quick_menu4_pc.png"
+                                alt="INTERNATIONAL MEMBERSHIP KSUM 배너 클릭시 자세히보기">
+                        </a>
+                    </li>
+                </ul>
+
+            </article>
+
+            <!-- main3 끝 -->
+
+            <!-- 배너그룹 슬라이드 -->
+
+            <article id="bangroup">
+                <ul>
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner.png"
+                                alt="기업 guerbet 소개 배너 클릭시 자세히보기"></a></li>
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner2.png"
+                                alt="기업 Dongkooklifescience 소개 배너 클릭시 자세히보기"></a></li>
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner3.png"
+                                alt="기업 samsung 소개 배너 클릭시 자세히보기"></a></li>
+
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner.png"
+                                alt="기업 guerbet 소개 배너 클릭시 자세히보기"></a></li>
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner2.png"
+                                alt="기업 Dongkooklifescience 소개 배너 클릭시 자세히보기"></a></li>
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner3.png"
+                                alt="기업 samsung 소개 배너 클릭시 자세히보기"></a></li>
+
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner.png"
+                                alt="기업 guerbet 소개 배너 클릭시 자세히보기"></a></li>
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner2.png"
+                                alt="기업 Dongkooklifescience 소개 배너 클릭시 자세히보기"></a></li>
+                    <li class="slick-slide"><a href="#"><img src="img/bangroup/banner3.png"
+                                alt="기업 samsung 소개 배너 클릭시 자세히보기"></a></li>
+
+                </ul>
+
+                <span>
+                    <a class="bangroup_prev" href="#"><img src="img/quick_menu/quick_prev.png" alt="이전페이지"></a>
+                    <a class="bangroup_next" href="#"><img src="img/quick_menu/quick_next.png" alt="다음페이지"></a>
+                </span>
+            </article>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div id="footer_wrap">
+
+            <div id="footer_selectbox">
+                <select id="footer_select">
+                    <option value="관련사이트">관련사이트</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+
+                <p class="shortad"><a href="#"><img src="img/footer/shortad.png" alt="RapidSSl $10,000 안전 광고"></a></p>
+            </div>
+
+            <ul class="legalNotice">
+                <li><a href="#">개인정보 취급 방침</a></li>
+                <li>|</li>
+                <li><a href="#">이메일 무단 수집 거부</a></li>
+            </ul>
+
+
+
+            <address>
+
+                <p>서울시 마포구 마포대로 53 마포트라팰리스 A동 304호</p>
+
+                <ul class="footer_info">
+                    <li>사업자등록번호 : 229-82-00887</li>
+                    <li>대표자 : 이원재</li>
+                </ul>
+
+                <ul class="footer_info">
+                    <li>
+                        Tel. +82-2-763-5627
+                    </li>
+
+                    <li>
+                        Fax. +82-2-763-6909
+                    </li>
+
+                    <li>
+                        E-mail : offce@ultrasound.or.kr
+                    </li>
+                </ul>
+
+                <p>
+                    Copyright &copy; by Korean Society of Ultrasound in Medicne
+                </p>
+            </address>
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

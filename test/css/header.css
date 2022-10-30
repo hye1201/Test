@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+
+/* pc부터 시작 */
+#header {
+    height: 180px;
+
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    background: #fff url(../img/gnb/bg.jpg) 0 0;
+}
+
+#header .header_first {
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    margin-left: -550px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+#header .header_first h1 {
+    border: none;
+    z-index: 9;
+    padding-left: 1.25rem
+}
+
+/* PC GNB header */
+#header .gnb_container {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    background: #fff url(../img/gnb/bg.jpg) 0 0;
+}
+
+#header .gnb_container>div {
+    position: relative;
+
+}
+
+/* PC GNB > home, login, join, english */
+.gnb_container>div .sideMenu {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 99;
+
+}
+
+.gnb_container>div .sideMenu li a {
+    display: block;
+    font-size: 0.75rem;
+    padding: 0.3125rem 0.625rem;
+    cursor: pointer;
+}
+
+
+
+.gnb_container>div .sideMenu li a:hover {font-weight: bold;
+text-decoration: underline;}
+
+
+.gnb_container>div .sideMenu li:nth-child(2),
+.gnb_container>div .sideMenu li:nth-child(3) {
+    background: url(../img/gnb/split.png) no-repeat 0 center;
+}
+
+
+.gnb_container>div .sideMenu li.english a {
+    color: #fff;
+    background: #006e93;
+    border-radius: 0.6875rem;
+
+}
+
+/* PC GNB(학회소개~교육자료) */
+
+.gnb_container>div #gnb {
+    position: relative;
+    padding-top: 100px;
+}
+
+.gnb_container>div #gnb>ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.gnb_container>div #gnb>ul>li {
+    width: 16.6666%;
+    padding: 1.8rem 0;
+    background: url(../img/gnb/gnb_split.png)no-repeat 0 center;
+}
+
+
+
+.gnb_container>div #gnb>ul>li:first-child {
+    background: none;
+    color: #006e93;
+
+}
+
+
+.gnb_container>div #gnb>ul>li>a {
+    display: block;
+    font-size: 1.125rem;
+    letter-spacing: -0.4px;
+    color: #141414;
+
+}
+
+.gnb_container>div #gnb>ul>li>a.active {
+    font-weight: bold;
+    color: #006e93;
+}
+
+
+/* PC LNB(submenu) */
+.gnb_container>div #gnb>ul>li .submenu {
+    position: absolute;
+    top: 78px;
+    width: 16.666666%;
+    background: #4c4b4b;
+    text-align: left;
+    height: 250px;
+    padding-top: 1.75rem;
+    display: none;
+    z-index: 999;
+    border-left: 1px solid rgba(247, 247, 247, 0.5);
+    box-sizing: border-box;
+
+}
+
+.gnb_container>div #gnb>ul>li .submenu.active {
+
+    display: block;
+}
+
+.gnb_container>div #gnb>ul>li .submenu.back {
+    background: #1e728e;
+}
+
+.gnb_container>div #gnb>ul>li .submenu li {
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+
+}
+
+
+.gnb_container>div #gnb>ul>li .submenu li a {
+    display: block;
+    font-size: 0.875rem;
+    color: #fff;
+    letter-spacing: -0.4px;
+    padding-left: 0.625rem;
+
+
+    background: url(../img/gnb/lnb_dot.png)no-repeat 0 center;
+
+
+}
+
+.gnb_container>div #gnb>ul>li .submenu li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Mobile 시작 */
+@media screen and (max-width:1022px) {
+
+
+    /* modal */
+    #modal_back {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        z-index: -99;
+    }
+
+    #modal_back.back_on {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .body_lock {
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+
+    #header {
+        height: 91px;
+        background: #fff;
+        overflow: hidden;
+
+    }
+
+    #header .header_first {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 1.25rem 0.625rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    #header .header_first h1 {
+        padding-left: 0.25rem;
+        z-index: 99;
+    }
+
+    #header .header_first h1 img {
+
+        height: 51px;
+
+    }
+
+    /* hamburger button */
+    #header .header_first button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    /* Mobile GNB header */
+    #header .gnb_container {
+        position: fixed;
+        top: 0;
+        right: 0%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: -999 !important;
+        background: none;
+
+    }
+
+    #header .gnb_container.active {
+        opacity: 1;
+        z-index: 9999 !important;
+    }
+
+
+    #header .gnb_container #gnb_wrap {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        background: none;
+    }
+
+
+    #header .gnb_container #gnb_wrap p {
+        position: absolute;
+        top: 1.9375rem;
+        right: 2.0625rem;
+        cursor: pointer;
+
+    }
+
+    /* Mobile GNB > home, login, join, english */
+    .gnb_container>div#gnb_wrap .sideMenu {
+        position: absolute;
+        top: 0;
+        right: 0%;
+        width: 90%;
+        margin-left: 11%;
+        display: flex;
+        height: 180px;
+        background: #006e93;
+        flex-wrap: wrap;
+        padding: 1.125rem 0.75rem 1.625rem 0.875rem;
+        text-align: center;
+
+
+    }
+
+
+    .gnb_container>div#gnb_wrap .sideMenu li:first-child {
+        width: 100% !important;
+    }
+
+
+    .gnb_container>div#gnb_wrap .sideMenu li:first-child a {
+        font-size: 0 !important;
+        background: url(../img/gnb/logo_w.png)no-repeat 0 0;
+        width: 245px;
+        height: 58px;
+        text-align: left;
+        border: none;
+    }
+
+    .gnb_container>div#gnb_wrap .sideMenu li {
+        width: 33.33%;
+        background: none !important;
+
+    }
+
+    .gnb_container>div#gnb_wrap .sideMenu li a {
+        display: block;
+        font-size: 1.375rem;
+        letter-spacing: -0.16px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 0.8rem 0;
+    }
+
+    .gnb_container>div#gnb_wrap .sideMenu .english a {
+        border-radius: 4px !important;
+    }
+
+
+    /* Mobile GNB(학회소개~교육자료) */
+    .gnb_container>div#gnb_wrap #gnb {
+        position: relative;
+        padding-top: 180px;
+        margin-left: 10%;
+        height: 100%;
+        box-sizing: border-box;
+
+
+    }
+
+    .gnb_container>div#gnb_wrap #gnb>ul {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+
+
+
+    }
+
+    .gnb_container>div#gnb_wrap #gnb>ul>li {
+        background: none;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        cursor: pointer;
+
+
+    }
+
+    .gnb_container>div#gnb_wrap #gnb>ul>li>a {
+        border-bottom: 1px solid #dedede;
+        display: block;
+        background: #fff url(../img/gnb/down_arrow.png) no-repeat 95% center;
+        font-size: 1.625rem;
+        box-sizing: border-box;
+        letter-spacing: -0.16px;
+        padding: 2.0625rem 0 2.0625rem 3.3125rem;
+
+    }
+
+    .gnb_container>div#gnb_wrap #gnb>ul>li.active>a {
+        background: #fff url(../img/gnb/up_arrow.png) no-repeat 95% center;
+    }
+
+
+
+    /* Mobile LNB(submenu) */
+    .gnb_container>div#gnb_wrap #gnb>ul>li .submenu {
+        position: relative;
+        top: 0;
+        height: auto;
+        width: 100%;
+        padding: 1.875rem 0;
+        background: #f5f5f5;
+        border-bottom: 1px solid #dedede;
+        z-index: 99;
+
+
+    }
+
+    .gnb_container>div#gnb_wrap #gnb>ul>li .submenu li {
+        padding-bottom: 1.875rem;
+        padding-top: 0;
+        padding-left: 3.3125rem;
+    }
+
+    .gnb_container>div#gnb_wrap #gnb>ul>li .submenu li:last-child {
+        padding-bottom: 0;
+    }
+
+    .gnb_container>div#gnb_wrap #gnb>ul>li .submenu li a {
+        display: block;
+        color: #696969;
+        font-size: 1.25rem;
+        letter-spacing: -0.16px;
+        background: url(../img/gnb/dot.png)no-repeat 0 center;
+        padding-left: 0.625rem;
+
+    }
+
+
+}
